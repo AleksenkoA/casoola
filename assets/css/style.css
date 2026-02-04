@@ -265,6 +265,11 @@ a {
     max-height: 45px;
 }
 
+.header__actions .button-image--gold .button-image__text {
+    color: #5C1A1F !important;
+    text-shadow: 0 1px 2px rgba(255, 255, 255, 0.8), 0 0 5px rgba(255, 255, 255, 0.5) !important;
+}
+
 .header__actions .button-image__text {
     font-size: 0.75rem;
 }
@@ -507,11 +512,12 @@ a {
     position: relative;
     margin-top: 0;
     margin-bottom: var(--spacing-lg);
-    overflow: hidden;
-    min-height: 400px;
+    overflow: visible;
+    min-height: 600px;
     display: flex;
     align-items: center;
     justify-content: center;
+    padding: 20px;
 }
 
 .welcome-banner__image-wrapper {
@@ -542,7 +548,7 @@ a {
 
 .welcome-banner__inner {
     position: relative;
-    z-index: 2;
+    z-index: 3;
     width: 100%;
     max-width: 1200px;
     margin: 0 auto;
@@ -593,6 +599,11 @@ a {
     object-fit: contain;
 }
 
+.welcome-banner__button.button-image--gold .button-image__text {
+    color: #5C1A1F !important;
+    text-shadow: 0 1px 2px rgba(255, 255, 255, 0.8), 0 0 5px rgba(255, 255, 255, 0.5) !important;
+}
+
 .welcome-banner__button .button-image__text {
     position: absolute;
     top: 50%;
@@ -635,6 +646,7 @@ a {
     background: none;
     padding: 0;
     line-height: 1;
+    margin-bottom: 10px;
 }
 
 .button-image:hover {
@@ -657,7 +669,7 @@ a {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    color: #F4DAC0 !important;
+    color: #F4DAC0;
     font-weight: 700;
     font-size: 0.875rem;
     text-transform: uppercase;
@@ -681,8 +693,9 @@ a {
 }
 
 .button-image--gold .button-image__text {
-    color: #F4DAC0;
-    text-shadow: 0 0 10px rgba(192, 157, 107, 0.5), 0 2px 4px rgba(0, 0, 0, 0.5);
+    color: #5C1A1F !important;
+    text-shadow: 0 1px 2px rgba(255, 255, 255, 0.8), 0 0 5px rgba(255, 255, 255, 0.5) !important;
+    font-weight: 700;
 }
 
 .button-image--red {
@@ -1219,8 +1232,9 @@ a {
     display: flex;
     gap: var(--spacing-md);
     flex-wrap: wrap;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
+    margin-bottom: var(--spacing-2xl);
 }
 
 /* Section Styles */
@@ -1236,8 +1250,8 @@ a {
 
 .section-subtitle {
     text-align: center;
-    font-size: 1.125rem;
-    color: var(--color-text-light);
+    font-size: 1.375rem;
+    color: #FFF9E6;
     margin-bottom: var(--spacing-xl);
     width: 100%;
     max-width: 100%;
@@ -1856,6 +1870,10 @@ a {
     background-image: url('../images/img2.jpg');
 }
 
+.content-block--bg-2 .content-block__overlay {
+    background: linear-gradient(135deg, rgba(15, 23, 42, 0.95) 0%, rgba(30, 41, 59, 0.92) 50%, rgba(15, 23, 42, 0.95) 100%);
+}
+
 .content-block--bg-3 {
     background-image: url('../images/img4.jpg');
 }
@@ -1884,6 +1902,16 @@ a {
     inset: 0;
     background: linear-gradient(135deg, rgba(15, 23, 42, 0.85) 0%, rgba(30, 41, 59, 0.8) 50%, rgba(15, 23, 42, 0.85) 100%);
     z-index: 1;
+}
+
+.content-block--bg-1 .content-block__overlay {
+    background: linear-gradient(135deg, rgba(15, 23, 42, 0.95) 0%, rgba(30, 41, 59, 0.92) 50%, rgba(15, 23, 42, 0.95) 100%);
+}
+
+.gamification-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.5), 0 0 20px rgba(255, 197, 6, 0.3);
+    border-color: var(--color-accent);
 }
 
 .content-block:hover {
@@ -3515,6 +3543,46 @@ a {
         flex-direction: column;
         gap: var(--spacing-sm);
     }
+}
+
+/* Rules Scroll Styles */
+.rules-scroll {
+    scrollbar-width: thin;
+    scrollbar-color: var(--color-accent) rgba(42, 11, 14, 0.5);
+}
+
+.rules-scroll::-webkit-scrollbar {
+    height: 8px;
+}
+
+.rules-scroll::-webkit-scrollbar-track {
+    background: rgba(42, 11, 14, 0.5);
+    border-radius: 4px;
+}
+
+.rules-scroll::-webkit-scrollbar-thumb {
+    background: var(--color-accent);
+    border-radius: 4px;
+}
+
+.rules-scroll::-webkit-scrollbar-thumb:hover {
+    background: var(--color-accent-light);
+}
+
+.rule-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80px;
+    height: 80px;
+    margin: 0 auto var(--spacing-md);
+}
+
+.rule-icon img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
 }
 
 /* Performance Optimizations - removed will-change as it's only needed during animation */
