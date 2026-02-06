@@ -51,15 +51,12 @@
             </div>
             <div class="header__top">
                 <div class="header__actions">
-                    <button class="header__search-btn" id="header-search" aria-label="Search">
-                        <img src="assets/images/search@2x.webp" alt="Search" class="header__search-icon">
-                    </button>
                     <a href="{{link}}" class="button-image button-image--red header__btn header__btn--login" id="header-login">
                         <img src="assets/images/button2.webp" alt="LOGIN" class="button-image__img">
                         <span class="button-image__text">LOGIN</span>
                     </a>
-                    <a href="{{link}}" class="button-image button-image--gold header__btn header__btn--register" id="header-register">
-                        <img src="assets/images/button-hero.webp" alt="REGISTER" class="button-image__img">
+                    <a href="{{link}}" class="button-image button-image--red header__btn header__btn--register" id="header-register">
+                        <img src="assets/images/button2.webp" alt="REGISTER" class="button-image__img">
                         <span class="button-image__text">REGISTER</span>
                     </a>
                 </div>
@@ -883,23 +880,6 @@
         </footer>
     </div>
 
-    <!-- Search Modal -->
-    <div class="modal-overlay" id="search-modal-overlay">
-        <div class="modal modal--search" id="search-modal">
-            <button class="modal__close" id="search-modal-close" aria-label="Close search">×</button>
-            <div class="modal__header">
-                <h2 class="modal__title">Search</h2>
-            </div>
-            <div class="search-form">
-                <div class="form-group">
-                    <input type="text" id="search-input" class="form-input form-input--search" placeholder="Search games, features, help..." autofocus>
-                </div>
-                <div class="search-results" id="search-results">
-                    <p class="search-placeholder">Enter your search query...</p>
-                </div>
-            </div>
-        </div>
-    </div>
 
         </main>
     </div>

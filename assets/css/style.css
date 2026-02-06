@@ -202,7 +202,7 @@ a {
     margin: 0 auto;
     padding: 0 var(--spacing-md);
     box-sizing: border-box;
-    overflow-x: hidden;
+    overflow-x: visible;
     position: relative;
 }
 
@@ -271,9 +271,9 @@ a {
 }
 
 .header__actions .button-image__img {
-    min-width: 220px;
-    max-width: 320px;
-    max-height: 70px;
+    min-width: 260px;
+    max-width: 330px;
+    max-height: 52px;
     filter: none !important;
 }
 
@@ -299,7 +299,7 @@ a {
 }
 
 .header__actions .button-image__text {
-    font-size: 0.65rem;
+    font-size: 0.8rem;
     white-space: nowrap;
 }
 
@@ -556,12 +556,14 @@ a {
     width: 100%;
     height: 100%;
     z-index: 0;
+    overflow: visible;
 }
 
 .welcome-banner__background {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    object-position: center center;
     display: block;
 }
 
@@ -623,9 +625,9 @@ a {
 .welcome-banner__button .button-image__img {
     width: auto;
     height: auto;
-    min-width: 250px;
-    max-width: 350px;
-    max-height: 70px;
+    min-width: 340px;
+    max-width: 430px;
+    max-height: 58px;
     object-fit: contain;
 }
 
@@ -641,7 +643,7 @@ a {
     transform: translate(-50%, -50%);
     color: #F4DAC0 !important;
     font-weight: 700;
-    font-size: 0.7rem;
+    font-size: 0.95rem;
     text-transform: uppercase;
     letter-spacing: 0.5px;
     white-space: nowrap;
@@ -656,9 +658,9 @@ a {
 .join-now-button {
     width: auto;
     height: auto;
-    min-width: 250px;
-    max-width: 350px;
-    max-height: 70px;
+    min-width: 340px;
+    max-width: 430px;
+    max-height: 58px;
     object-fit: contain;
     display: block;
     filter: drop-shadow(0 4px 10px rgba(0, 0, 0, 0.5));
@@ -678,6 +680,8 @@ a {
     padding: 0;
     line-height: 1;
     margin-bottom: 4px;
+    max-width: 100%;
+    overflow: visible;
 }
 
 .button-image:hover {
@@ -688,9 +692,9 @@ a {
 .button-image__img {
     width: auto;
     height: auto;
-    min-width: 400px;
-    max-width: 550px;
-    max-height: 110px;
+    min-width: 1050px;
+    max-width: 1200px;
+    max-height: 140px;
     object-fit: contain;
     display: block;
     filter: drop-shadow(0 4px 10px rgba(0, 0, 0, 0.5));
@@ -703,14 +707,14 @@ a {
     transform: translate(-50%, -50%);
     color: #F4DAC0;
     font-weight: 700;
-    font-size: 0.65rem;
+    font-size: 0.9rem;
     text-transform: uppercase;
     letter-spacing: 0.3px;
     white-space: normal;
     z-index: 10;
     pointer-events: none;
     text-shadow: 0 2px 8px rgba(0, 0, 0, 0.8), 0 0 10px rgba(0, 0, 0, 0.5);
-    max-width: 85%;
+    max-width: 90%;
     line-height: 1.2;
     text-align: center;
     word-wrap: break-word;
@@ -871,6 +875,8 @@ a {
     max-width: 100%;
     flex-shrink: 0;
     box-sizing: border-box;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
 }
 
 .spin-rally-game-card::before {
@@ -959,6 +965,9 @@ a {
     margin-bottom: var(--spacing-xs);
     text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
     line-height: 1.2;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    max-width: 100%;
 }
 
 .spin-rally-game-card__min-bet,
@@ -968,6 +977,9 @@ a {
     color: var(--color-text);
     margin-bottom: var(--spacing-xs);
     line-height: 1.5;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    max-width: 100%;
 }
 
 .spin-rally-game-card__prize {
@@ -1344,7 +1356,7 @@ a {
     text-align: center;
     transition: var(--transition);
     position: relative;
-    overflow: visible;
+    overflow: hidden;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -1352,6 +1364,9 @@ a {
     flex: 0 0 280px;
     min-width: 280px;
     scroll-snap-align: start;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    box-sizing: border-box;
 }
 
 .key-fact-card::before {
@@ -1420,6 +1435,9 @@ a {
     color: var(--color-text-light);
     margin-bottom: var(--spacing-xs);
     font-weight: 500;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    max-width: 100%;
 }
 
 .key-fact-card__value {
@@ -1427,6 +1445,9 @@ a {
     font-weight: 700;
     color: #F4DAC0;
     text-shadow: 0 2px 8px rgba(0, 0, 0, 0.5), 0 0 15px rgba(212, 175, 55, 0.3);
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    max-width: 100%;
 }
 
 /* Top Games */
@@ -1487,6 +1508,9 @@ a {
     flex-direction: column;
     padding: var(--spacing-sm);
     padding-bottom: 0;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    box-sizing: border-box;
 }
 
 .game-card::after {
@@ -1559,6 +1583,9 @@ a {
     font-size: 1rem;
     text-align: center;
     background: var(--color-bg-dark);
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    max-width: 100%;
 }
 
 /* Table Section */
@@ -1642,7 +1669,10 @@ a {
     padding-top: calc(var(--spacing-lg) + 40px);
     position: relative;
     transition: var(--transition);
-    overflow: visible;
+    overflow: hidden;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    box-sizing: border-box;
 }
 
 .step-card::before {
@@ -1751,11 +1781,17 @@ a {
     margin-top: var(--spacing-xs);
     color: #F4DAC0;
     text-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    max-width: 100%;
 }
 
 .step-card__text {
     color: var(--color-text-light);
     line-height: 1.7;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    max-width: 100%;
 }
 
 .steps__cta {
@@ -1807,7 +1843,10 @@ a {
     flex: 0 0 320px;
     scroll-snap-align: start;
     position: relative;
-    overflow: visible;
+    overflow: hidden;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    box-sizing: border-box;
 }
 
 .advantage-item::before {
@@ -1862,12 +1901,18 @@ a {
     margin-bottom: var(--spacing-xs);
     color: #F4DAC0;
     text-shadow: 0 2px 6px rgba(0, 0, 0, 0.5);
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    max-width: 100%;
 }
 
 .advantage-item__text {
     color: var(--color-text-light);
     line-height: 1.7;
     font-size: 0.9375rem;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    max-width: 100%;
 }
 
 /* Content Sections */
@@ -2750,11 +2795,18 @@ a {
         font-size: 1.5rem;
     }
     
-    .join-now-button,
     .button-image__img {
-        min-width: 220px;
-        max-width: 320px;
-        max-height: 65px;
+        min-width: 0 !important;
+        max-width: 100% !important;
+        width: 100% !important;
+        max-height: 88px;
+    }
+    
+    .join-now-button {
+        min-width: 0 !important;
+        max-width: 100% !important;
+        width: 100% !important;
+        max-height: 110px;
     }
     
     .spin-rally-game-card {
@@ -2976,9 +3028,9 @@ a {
     }
     
     .header__actions .button-image__img {
-        min-width: 180px;
-        max-width: 250px;
-        max-height: 60px;
+        min-width: 130px;
+        max-width: 170px;
+        max-height: 44px;
         filter: none !important;
     }
     
@@ -2992,13 +3044,13 @@ a {
     }
     
     .header__actions .button-image__img {
-        min-width: 150px;
-        max-width: 220px;
-        max-height: 55px;
+        min-width: 105px;
+        max-width: 155px;
+        max-height: 42px;
     }
     
     .header__actions .button-image__text {
-        font-size: 0.6rem;
+        font-size: 0.7rem;
         white-space: nowrap;
     }
     
@@ -3059,17 +3111,30 @@ a {
         font-size: 0.9375rem;
     }
     
-    .join-now-button,
     .button-image__img {
-        min-width: 200px;
-        max-width: 300px;
-        max-height: 60px;
+        min-width: 0 !important;
+        max-width: 100% !important;
+        width: 100% !important;
+        max-height: 79px;
+    }
+    
+    .join-now-button {
+        min-width: 0 !important;
+        max-width: 100% !important;
+        width: 100% !important;
+        max-height: 100px;
     }
     
     .steps__grid {
         grid-template-columns: repeat(2, 1fr);
     }
     
+}
+
+@media (max-width: 470px) {
+    .welcome-banner__background {
+        object-position: left center;
+    }
 }
 
 @media (max-width: 768px) {
@@ -3480,6 +3545,25 @@ a {
         font-size: 0.875rem;
     }
     
+    .button-image {
+        max-width: 100%;
+        overflow: visible;
+    }
+    
+    .button-image__img {
+        min-width: 0 !important;
+        max-width: 100% !important;
+        width: 100% !important;
+        height: auto !important;
+    }
+    
+    .join-now-button {
+        min-width: 0 !important;
+        max-width: 100% !important;
+        width: 100% !important;
+        height: auto !important;
+    }
+    
     .welcome-banner__title {
         font-size: 1.25rem;
     }
@@ -3577,9 +3661,9 @@ a {
     }
     
     .header__actions .button-image__img {
-        min-width: 140px;
-        max-width: 200px;
-        max-height: 50px;
+        min-width: 95px;
+        max-width: 140px;
+        max-height: 38px;
         filter: none !important;
     }
     
@@ -3668,16 +3752,16 @@ a {
         filter: none !important;
         max-width: 100%;
         width: 100%;
-        max-height: 40px;
-        min-height: 38px;
+        max-height: 30px;
+        min-height: 28px;
         object-fit: contain;
     }
     
     .header__actions .button-image--gold .button-image__img {
         min-width: 0 !important;
         max-width: 105px !important;
-        max-height: 46px !important;
-        min-height: 44px !important;
+        max-height: 40px !important;
+        min-height: 38px !important;
     }
     
     .header__actions .button-image--gold {
@@ -3686,7 +3770,7 @@ a {
     }
     
     .header__actions .button-image__text {
-        font-size: 0.6rem;
+        font-size: 0.65rem;
         padding: 0 4px;
         white-space: nowrap;
     }
@@ -3752,13 +3836,13 @@ a {
     
     .header__actions .button-image__img {
         width: 100%;
-        max-height: 38px;
-        min-height: 36px;
+        max-height: 30px;
+        min-height: 28px;
         filter: none !important;
     }
     
     .header__actions .button-image__text {
-        font-size: 0.55rem;
+        font-size: 0.6rem;
         white-space: nowrap;
     }
     
@@ -3817,13 +3901,13 @@ a {
     
     .header__actions .button-image__img {
         width: 100%;
-        max-height: 36px;
-        min-height: 34px;
+        max-height: 28px;
+        min-height: 26px;
         filter: none !important;
     }
     
     .header__actions .button-image__text {
-        font-size: 0.5rem;
+        font-size: 0.55rem;
         white-space: nowrap;
     }
     
@@ -3869,11 +3953,31 @@ a {
         font-size: 1.125rem;
     }
     
-    .join-now-button,
+    .button-image {
+        max-width: 100%;
+        overflow: visible;
+    }
+    
     .button-image__img {
-        min-width: 180px;
-        max-width: 280px;
-        max-height: 55px;
+        min-width: 0 !important;
+        max-width: 100% !important;
+        width: 100% !important;
+        height: auto !important;
+    }
+    
+    .join-now-button {
+        min-width: 0 !important;
+        max-width: 100% !important;
+        width: 100% !important;
+        height: auto !important;
+    }
+    
+    /* Ensure button containers don't clip buttons */
+    div[style*="text-align: center"] .button-image,
+    .content-block__inner .button-image,
+    .hero__cta .button-image {
+        max-width: 100%;
+        overflow: visible;
     }
     
     .button-image--block .button-image__img {
@@ -4167,6 +4271,19 @@ a {
 .gamification-card,
 .tier-card {
     transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.rule-card h4,
+.rule-card p,
+.gamification-card h4,
+.gamification-card p {
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    max-width: 100%;
 }
 
 .rule-card:hover,
@@ -4175,6 +4292,37 @@ a {
     transform: translateY(-5px) scale(1.02);
     box-shadow: 0 8px 25px rgba(255, 197, 6, 0.3);
     border-color: rgba(255, 197, 6, 0.6);
+}
+
+/* Review cards - prevent text overflow */
+.content-sections article > div > div[style*="background: rgba(42, 11, 14"],
+.content-sections article > div > div[style*="border: 2px solid"] {
+    word-wrap: break-word !important;
+    overflow-wrap: break-word !important;
+    box-sizing: border-box !important;
+    overflow: hidden !important;
+}
+
+.content-sections article > div > div[style*="background: rgba(42, 11, 14"] h3,
+.content-sections article > div > div[style*="background: rgba(42, 11, 14"] p {
+    word-wrap: break-word !important;
+    overflow-wrap: break-word !important;
+    max-width: 100% !important;
+}
+
+/* Universal card text overflow prevention */
+div[style*="background"][style*="border"][style*="border-radius"] {
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    box-sizing: border-box;
+}
+
+div[style*="background"][style*="border"][style*="border-radius"] h3,
+div[style*="background"][style*="border"][style*="border-radius"] h4,
+div[style*="background"][style*="border"][style*="border-radius"] p {
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    max-width: 100%;
 }
 
 /* Review cards animation */
